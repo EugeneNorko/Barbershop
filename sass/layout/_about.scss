@@ -1,0 +1,41 @@
+.container--about {
+  display: flex;
+}
+
+.about-wrapp {
+  // @media screen and (min-width:768px){
+  // }
+  // width: calc(100% / 2);
+}
+
+.about-photo {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  // display: flex;
+  // flex-shrink: 0;
+  // margin-right: 64px;
+}
+
+.about-photo__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__pre-title {
+  margin-bottom: 20px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__after-title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,42 @@
+.section-title {
+  font-family: Raleway;
+  font-weight: 700;
+
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $secondary-text-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 9.6vw;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 42px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  color: $white-color;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  @media screen and (max-width: 479px) {
+    font-size: 10vw;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+  }
+}
+
+.prices__title {
+  color: $white-color;
+  margin-bottom: 44px;
+}

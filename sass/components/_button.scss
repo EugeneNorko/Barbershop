@@ -1,0 +1,36 @@
+.btn {
+  transition: background-color $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+
+  min-width: 160px;
+  min-height: 40px;
+  padding: 5px;
+  border: 1px solid $active-color;
+  border-radius: 25px;
+  cursor: pointer;
+
+  background-color: transparent;
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+  }
+
+  &--white {
+    color: $white-color;
+  }
+
+  &--dark {
+    color: $secondary-text-color;
+    &:hover,
+    &:focus {
+      color: $white-color;
+    }
+  }
+}

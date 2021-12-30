@@ -1,0 +1,98 @@
+.sign__wrapp {
+  // width: 600px;
+  // padding-right: 40px;
+}
+
+.sign__title {
+  margin-bottom: 40px;
+
+  color: $white-color;
+}
+
+.form-sign {
+  // display: flex;
+  // flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+.form-sign__form-field {
+  position: relative;
+  margin-bottom: 44px;
+
+  & + & {
+    margin-left: auto;
+  }
+}
+
+.form-sign__label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transition: transform $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+  color: rgba(157, 164, 189, 0.4);
+
+  .form-sign__input:focus + & {
+    transform: translateY(-120%);
+    color: $white-color;
+  }
+
+  .form-sign__input:not(:placeholder-shown) + & {
+    transform: translateY(-120%);
+  }
+}
+
+.form-sign__input {
+  height: 30px;
+  display: block;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  // width: 270px;
+
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 5px 3px;
+  transition: border-color $transition-duration $timing-function;
+
+  color: $white-color;
+  background-color: transparent;
+
+  &--tel {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    // width: 260px;
+  }
+
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+  }
+
+  &:focus {
+    border-color: $white-color;
+  }
+}
+
+.form-sign__textarea {
+  resize: none;
+  width: 100%;
+  height: 76px;
+  margin-bottom: 44px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-color $transition-duration $timing-function;
+
+  color: $white-color;
+  background-color: transparent;
+
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+  }
+
+  &:focus {
+    border-color: $white-color;
+  }
+}

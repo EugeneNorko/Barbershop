@@ -1,0 +1,13 @@
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  &--grey {
+    color: $contacts-text-color;
+  }
+}
+
+.hero__after-title {
+  max-width: 400px;
+}

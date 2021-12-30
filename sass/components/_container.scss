@@ -1,0 +1,24 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  &--header {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

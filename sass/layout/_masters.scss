@@ -1,0 +1,48 @@
+.masters__section {
+  background-color: rgba(247, 247, 247, 1);
+  color: $secondary-text-color;
+}
+.masters__pre-title {
+  margin-bottom: 20px;
+}
+
+.masters__title {
+  margin-bottom: 44px;
+}
+
+.masters__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.masters__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.masters__card-content {
+  padding-top: 30px;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.masters__position {
+  margin-bottom: 30px;
+
+  color: $active-color;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+}

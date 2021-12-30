@@ -1,0 +1,57 @@
+.sign-contacts-wrapp {
+  padding: 0;
+  background-color: rgba(25, 28, 38, 1);
+
+  @media screen and (max-width: 767px) {
+    // max-width: 480px;
+    margin: 0 auto;
+  }
+
+  background-repeat: no-repeat;
+  background-size: 480px;
+  background-position: bottom;
+
+  color: $contacts-text-color;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/phone/contacts_bg_phone.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: url("../images/phone/contacts_bg_phone-2x.png");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/tablet/contacts_bg_tablet.png");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: url("../images/tablet/contacts_bg_tablet-2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("../images/contacts_bg.png");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: url("../images/contacts_bg-2x.png");
+    }
+  }
+}
+
+.contacts__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.contacts__wrapp {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}

@@ -1,0 +1,53 @@
+.section {
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  &--hero {
+    margin: 0 auto;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 767px) {
+      background-image: url(../images/phone/hero_phone.jpg);
+      padding-top: 208px;
+      padding-bottom: 183px;
+      max-width: 767px;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2ddpx) {
+        background-image: url(../images/phone/hero_phone-2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/tablet/hero_tablet.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2ddpx) {
+        background-image: url(../images/tablet/hero_tablet-2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/hero.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2ddpx) {
+        background-image: url(../images/hero-2x.jpg);
+      }
+    }
+  }
+}
