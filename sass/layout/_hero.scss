@@ -1,5 +1,7 @@
 .container--hero {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .hero-social {
@@ -53,12 +55,31 @@
 }
 
 .hero {
-  // flex-grow: 1;
-  // padding-left: 96px;
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+    padding-left: 70px;
+    padding-top: 280px;
+    padding-bottom: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/tablet/hero_tablet.jpg);
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: url(../images/tablet/hero_tablet-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: url(../images/hero-2x.jpg);
+    }
+  }
 }
 
 .hero__after-title {

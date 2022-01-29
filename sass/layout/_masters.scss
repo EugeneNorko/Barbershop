@@ -1,4 +1,4 @@
-.masters__section {
+.section--masters {
   background-color: rgba(247, 247, 247, 1);
   color: $secondary-text-color;
 }
@@ -11,19 +11,29 @@
 }
 
 .masters__list {
-  @media screen and (min-width: 768px) {
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
     display: flex;
+    margin: -15px;
   }
 }
 
-.masters__item:not(:last-child) {
+.masters__item {
   @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 64px;
     }
   }
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+  }
 }
 
+.masters__photo {
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
 .masters__card-content {
   padding-top: 30px;
 }

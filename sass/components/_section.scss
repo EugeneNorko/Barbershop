@@ -31,23 +31,5 @@
         background-image: url(../images/phone/hero_phone-2x.jpg);
       }
     }
-
-    @media screen and (min-width: 768px) {
-      background-image: url(../images/tablet/hero_tablet.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2ddpx) {
-        background-image: url(../images/tablet/hero_tablet-2x.jpg);
-      }
-    }
-
-    @media screen and (min-width: 1200px) {
-      background-image: url(../images/hero.jpg);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2ddpx) {
-        background-image: url(../images/hero-2x.jpg);
-      }
-    }
   }
 }

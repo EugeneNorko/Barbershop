@@ -1,6 +1,24 @@
-.sign__wrapp {
-  // width: 600px;
-  // padding-right: 40px;
+.sign-address-section {
+  @media screen and (min-width: 1200px) {
+    background-color: rgba(25, 28, 38, 1);
+  }
+}
+.sign-address-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.section--sign {
+  background-color: rgba(25, 28, 38, 1);
+}
+
+.container--sign {
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    padding-right: 40px;
+  }
 }
 
 .sign__title {
@@ -10,9 +28,11 @@
 }
 
 .form-sign {
-  // display: flex;
-  // flex-wrap: wrap;
   margin-top: 44px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form-sign__form-field {
@@ -21,6 +41,10 @@
 
   & + & {
     margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 330px;
   }
 }
 
@@ -45,25 +69,25 @@
 .form-sign__input {
   height: 30px;
   display: block;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-  // width: 270px;
-
+  border-radius: 0;
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   padding: 5px 3px;
   transition: border-color $transition-duration $timing-function;
-
+  width: 100%;
   color: $white-color;
   background-color: transparent;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 
   &--tel {
-    @media screen and (max-width: 767px) {
-      width: 100%;
+    @media screen and (min-width: 1200px) {
+      width: 260px;
     }
-    // width: 260px;
   }
 
   &::placeholder {
@@ -83,6 +107,7 @@
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-radius: 0;
   transition: border-color $transition-duration $timing-function;
 
   color: $white-color;

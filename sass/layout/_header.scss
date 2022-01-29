@@ -3,12 +3,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .container--header {
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -35,7 +42,12 @@
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 40px;
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }
 }
 .nav__link {
   transition: color $transition-duration $timing-function;
@@ -54,19 +66,32 @@
 }
 
 .nav-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
   @media screen and (max-width: 767px) {
     display: none;
   }
-  // @media screen and (min-width: 768px) {
-  //   display: none;
-  // }
-  // display: flex;
-  // align-items: center;
-  // margin-left: auto;
-  // padding-right: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+    margin-right: 2px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 4px;
+  }
 }
 
-// .nav-contacts__item:not(:last-child) {
-//   margin-right: 40px;
-//   padding: 0;
-// }
+.nav-contacts__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
+}

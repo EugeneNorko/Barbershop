@@ -1,14 +1,16 @@
-.work__after-title {
+.gallery__title {
   margin-bottom: 44px;
 }
 
-.work__list {
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: -15px;
-  @media screen and (min-width: 768px) {
+}
+.gallery__item {
+  margin: 15px;
+  @media screen and (max-width: 767px) {
     display: flex;
   }
-}
-
-.work__item {
-  margin: 15px;
 }
