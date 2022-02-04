@@ -43,6 +43,7 @@
   height: 100vh;
   padding-top: 115px;
   padding-left: 40px;
+  transform: translate(100%);
 
   opacity: 0;
   visibility: hidden;
@@ -51,12 +52,14 @@
   background-color: $white-color;
 
   transition: opacity $transition-duration $timing-function,
-    visibility $transition-duration $timing-function;
+    visibility $transition-duration $timing-function,
+    transform $transition-duration $timing-function;
 
   &.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
+    transform: translate(0%);
   }
 
   @media screen and (min-width: 768px) {
