@@ -107,6 +107,7 @@
   display: inline-block;
 }
 .address__icon {
+  flex-shrink: 0;
   margin-right: 16px;
   fill: currentcolor;
   stroke: currentColor;
