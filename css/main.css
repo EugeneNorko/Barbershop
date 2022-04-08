@@ -298,7 +298,7 @@ ul {
 .body {
   margin: 0;
   font-family: "Open sans", "sans-serif";
-  color: #555555;
+  color: rgb(85, 85, 85);
 }
 
 input:-webkit-autofill,
@@ -425,15 +425,15 @@ input:-webkit-autofill:active {
 .menu-button-icon {
   width: 40px;
   height: 40px;
-  fill: white;
+  fill: rgb(255, 255, 255);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-button-icon--close {
-  fill: #303030;
+  fill: rgb(48, 48, 48);
 }
 .menu-button-icon:hover, .menu-button-icon:focus {
-  fill: #ff6c00;
+  fill: rgb(255, 108, 0);
 }
 
 .mob-menu {
@@ -449,7 +449,7 @@ input:-webkit-autofill:active {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -481,12 +481,12 @@ input:-webkit-autofill:active {
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.1em;
-  color: #303030;
+  color: rgb(48, 48, 48);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav__link:hover, .menu-nav__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 .menu-nav__link--social {
   display: block;
@@ -519,7 +519,7 @@ input:-webkit-autofill:active {
   background-color: transparent;
 }
 .menu-social-list__item:first-child::before {
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
 }
 
 .section-title {
@@ -527,7 +527,7 @@ input:-webkit-autofill:active {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: rgb(48, 48, 48);
 }
 @media screen and (max-width: 479px) {
   .section-title {
@@ -542,7 +542,7 @@ input:-webkit-autofill:active {
 
 .hero__title {
   margin-bottom: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Raleway;
   font-weight: 700;
   line-height: 1.18;
@@ -565,7 +565,7 @@ input:-webkit-autofill:active {
 }
 
 .prices__title {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 44px;
 }
 
@@ -601,11 +601,11 @@ input:-webkit-autofill:active {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  color: #303030;
+  color: rgb(48, 48, 48);
   background-color: #ffffff;
 }
 .social-list__link:hover, .social-list__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 
 .social-list__icon {
@@ -618,7 +618,7 @@ input:-webkit-autofill:active {
   min-width: 160px;
   min-height: 40px;
   padding: 5px;
-  border: 1px solid #ff6c00;
+  border: 1px solid rgb(255, 108, 0);
   border-radius: 25px;
   cursor: pointer;
   background-color: transparent;
@@ -630,16 +630,16 @@ input:-webkit-autofill:active {
   text-transform: uppercase;
 }
 .btn:hover, .btn:focus {
-  background-color: #ff6c00;
+  background-color: rgb(255, 108, 0);
 }
 .btn--white {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .btn--dark {
-  color: #303030;
+  color: rgb(48, 48, 48);
 }
 .btn--dark:hover, .btn--dark:focus {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .btn--mob-menu {
   min-width: 194px;
@@ -657,14 +657,14 @@ input:-webkit-autofill:active {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #303030;
+  color: rgb(48, 48, 48);
 }
 .pre-title::before {
   content: "";
   margin-right: 20px;
   width: 60px;
   height: 1px;
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
 }
 .pre-title--grey {
   color: rgba(157, 164, 189, 0.6);
@@ -699,7 +699,7 @@ input:-webkit-autofill:active {
   letter-spacing: 0.02em;
 }
 .after-title--grey {
-  color: #9da4bd;
+  color: rgb(157, 164, 189);
 }
 
 .hero__after-title {
@@ -719,7 +719,7 @@ input:-webkit-autofill:active {
 
 @media screen and (min-width: 1200px) {
   .sign-address-section {
-    background-color: #191c26;
+    background-color: rgb(25, 28, 38);
   }
 }
 
@@ -734,7 +734,7 @@ input:-webkit-autofill:active {
 }
 
 .section--sign {
-  background-color: #191c26;
+  background-color: rgb(25, 28, 38);
 }
 
 @media screen and (min-width: 1200px) {
@@ -746,7 +746,7 @@ input:-webkit-autofill:active {
 
 .sign__title {
   margin-bottom: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .form-sign {
@@ -788,7 +788,7 @@ input:-webkit-autofill:active {
 .form-sign__input:focus + .form-sign__label {
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .form-sign__input:not(:-moz-placeholder-shown) + .form-sign__label {
   transform: translateY(-120%);
@@ -812,7 +812,7 @@ input:-webkit-autofill:active {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
 }
@@ -842,7 +842,7 @@ input:-webkit-autofill:active {
   color: rgba(157, 164, 189, 0.4);
 }
 .form-sign__input:focus {
-  border-color: white;
+  border-color: rgb(255, 255, 255);
 }
 
 .form-sign__textarea {
@@ -856,7 +856,7 @@ input:-webkit-autofill:active {
   border-radius: 0;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
 }
 .form-sign__textarea::-webkit-input-placeholder {
@@ -875,7 +875,7 @@ input:-webkit-autofill:active {
   color: rgba(157, 164, 189, 0.4);
 }
 .form-sign__textarea:focus {
-  border-color: white;
+  border-color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 768px) {
@@ -924,7 +924,7 @@ input:-webkit-autofill:active {
   width: 60px;
   height: 1px;
   margin-right: 40px;
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
 }
 
 .hero-social__item:not(:last-child) {
@@ -934,14 +934,14 @@ input:-webkit-autofill:active {
 .hero-social__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #303030;
+  color: rgb(48, 48, 48);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36x;
   letter-spacing: 0.2em;
 }
 .hero-social__link:hover, .hero-social__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 
 @media screen and (min-width: 768px) {
@@ -1016,7 +1016,7 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 767px) {
   .header__logo {
-    fill: white;
+    fill: rgb(255, 255, 255);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1066,10 +1066,10 @@ input:-webkit-autofill:active {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .nav__link:hover, .nav__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 
 .nav-contacts {
@@ -1123,7 +1123,7 @@ input:-webkit-autofill:active {
 
 @media screen and (min-width: 1200px) {
   .about-wrapp {
-    width: calc(100% / 2);
+    width: 50%;
   }
 }
 
@@ -1196,7 +1196,7 @@ input:-webkit-autofill:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #9da4bd;
+  color: rgb(157, 164, 189);
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -1460,7 +1460,7 @@ input:-webkit-autofill:active {
 
 .reasons__number {
   margin-bottom: 6px;
-  color: #303030;
+  color: rgb(48, 48, 48);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -1478,11 +1478,11 @@ input:-webkit-autofill:active {
   font-size: 16px;
   line-height: 1.37;
   text-align: center;
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 
 .reasons__number-description {
-  color: #303030;
+  color: rgb(48, 48, 48);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -1513,8 +1513,8 @@ input:-webkit-autofill:active {
 }
 
 .section--masters {
-  background-color: #f7f7f7;
-  color: #303030;
+  background-color: rgb(247, 247, 247);
+  color: rgb(48, 48, 48);
 }
 
 .masters__pre-title {
@@ -1570,7 +1570,7 @@ input:-webkit-autofill:active {
 
 .masters__position {
   margin-bottom: 30px;
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
   font-size: 14px;
   line-height: 1.35;
   text-align: center;
@@ -1605,8 +1605,8 @@ input:-webkit-autofill:active {
 }
 
 .section--contacts {
-  background-color: #191c26;
-  color: #9da4bd;
+  background-color: rgb(25, 28, 38);
+  color: rgb(157, 164, 189);
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -1659,7 +1659,7 @@ input:-webkit-autofill:active {
 
 .contacts__title {
   margin-bottom: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1720,7 +1720,7 @@ input:-webkit-autofill:active {
   margin-bottom: 20px;
 }
 .address__link:hover, .address__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }
 
 .address__map {
@@ -1737,7 +1737,7 @@ input:-webkit-autofill:active {
 
 .work-time__text {
   margin-bottom: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -1770,7 +1770,7 @@ input:-webkit-autofill:active {
 }
 
 .page-footer__copyright {
-  color: #9da4bd;
+  color: rgb(157, 164, 189);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -1800,7 +1800,7 @@ input:-webkit-autofill:active {
   margin-right: 40px;
   width: 60px;
   height: 1px;
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
 }
 
 .page-footer__item:not(:last-child) {
@@ -1811,12 +1811,12 @@ input:-webkit-autofill:active {
   padding: 20px 0;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #303030;
+  color: rgb(48, 48, 48);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
 }
 .page-footer__link:hover, .page-footer__link:focus {
-  color: #ff6c00;
+  color: rgb(255, 108, 0);
 }/*# sourceMappingURL=main.css.map */
