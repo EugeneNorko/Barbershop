@@ -1,6 +1,6 @@
 .btn {
   transition: background-color $transition-duration $timing-function,
-    color $transition-duration $timing-function;
+    color $transition-duration $timing-function, border-color $transition-duration $timing-function;
 
   min-width: 160px;
   min-height: 40px;
@@ -37,4 +37,29 @@
   &--mob-menu {
     min-width: 194px;
   }
-}
+
+  &--modal-close {
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      min-height: 30px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+    
+      color: rgba(0, 0, 0, 1);
+      background-color: transparent;
+    
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $active-color;
+        border-color: $active-color;
+      }
+    }
+  }

@@ -1,0 +1,102 @@
+.form-modal__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(33, 33, 33, 1);
+
+    @media screen and (max-width: 480px) {
+        font-size: 4.2vw;
+    }
+}
+
+.form-modal__form-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-field__label {
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+}
+
+.form-field__wrapp {
+    display: block;
+    position: relative;
+}
+
+.form-field__input {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: 1px solid transparent;
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    transition: border $transition-duration $timing-function;
+    background-color: transparent;
+    font-size:16px;
+
+    &:focus,
+    &:hover {
+        border: 1px solid $active-color;
+    }
+}
+
+.form-field__icon {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    display: inline-block;
+    transition: stroke $transition-duration $timing-function;
+
+    stroke: rgba(33, 33, 33, 1);
+
+    .form-field__input:hover+&,
+    .form-field__input:focus+& {
+        stroke: $active-color;
+    }
+}
+
+.form-modal__form-comment {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form-comment__area {
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+
+    transition: border $transition-duration $timing-function;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px solid $active-color;
+    }
+}
