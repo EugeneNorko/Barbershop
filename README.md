@@ -1,1 +1,1 @@
-# Barbershop
+# Project Barbershop
