@@ -33,5 +33,9 @@ function getSavedFormData() {
         name.value = parsedFormData.footer_name;
         phone.value = parsedFormData.footer_phone;
         comment.value = parsedFormData.footer_comment;
+
+        formData.footer_name = parsedFormData.footer_name;
+        formData.footer_phone = parsedFormData.footer_phone;
+        formData.footer_comment = parsedFormData.footer_comment;
     }
 }

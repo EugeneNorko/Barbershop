@@ -2,7 +2,7 @@ import { refs } from './footer-form-localstorage.js'
 import { STORAGE_KEY } from './footer-form-localstorage.js';
 
 
-const { form, submit } = refs;
+const { form } = refs;
 
 form.addEventListener('submit', onFormSubmit);
 

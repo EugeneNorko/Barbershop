@@ -40,5 +40,11 @@ function getSavedFormData() {
         };
         dateTime.value = parsedData.time;
         comment.value = parsedData.comment;
+
+        formData.name = parsedData.name;
+        formData.phone = parsedData.phone;
+        formData.date = parsedData.date;
+        formData.time = parsedData.time;
+        formData.comment = parsedData.comment;
     }
 }
